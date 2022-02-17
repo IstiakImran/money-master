@@ -16,54 +16,82 @@
     <div class="main">
             <img class="image" src="images/saving-money.jpg" alt="">
         <div class="saving-container">
+            
             <h3>
                 Income
             </h3>
+            <p id="income-hidden" class="hidden-1">
+                <span class="red">*</span> Please Enter Correct Amount.
+            </p>
             <div class="input-div">
                 <p>Income: </p> 
-                <input type="text">
+                <input id="income-amount" type="text">
             </div>
             <h3>
                 Expenses
             </h3>
             <div class="expense-div">
+                <p id="food-hidden" class="hidden">
+                    <span class="red">*</span> Please Enter Correct Amount.
+                </p>
                 <div class="input-div">
                     <p>Food: </p>
-                    <input type="text">
+                    <input id="food-cost" type="text">
                 </div>
+                <p id="rent-hidden" class="hidden">
+                    <span class="red">*</span> Please Enter Correct Amount.
+                </p>
                 <div class="input-div">
                     <p>Rent: </p>
-                    <input type="text">
+                    <input id="rent-cost" type="text">
                 </div>
+                <p id="cloth-hidden" class="hidden">
+                    <span class="red">*</span> Please Enter Correct Amount.
+                </p>
                 <div class="input-div">
                     <p>Clothes: </p>
-                    <input type="text">
+                    <input id="cloth-cost" type="text">
                 </div>
             </div>
-            <button>
+            <button id="calc-btn">
                 Calculate
             </button>
             <h2>
-                Total Expenses: <span>0</span>
+                Total Expenses: <span id="total-expense">0</span>
             </h2>
-            <h2>
-                Balance: <span>0</span>
-            </h2>
-            <div class="input-div">
-                <p>
-                    Save: 
+             <p id="amount-hidden" class="hidden-3">
+                    <span class="red">*</span> Income Is Lower Than Expense.
                 </p>
-                <input type="text" name="" id="">
-                <p> % </p>
-                <button>Save</button>
+            <h2>
+                Balance: <span id="balance">0</span>
+            </h2>
+            <p id="rate-hidden" class="hidden-2">
+                <span class="red">*</span> Please Enter Correct Rate.
+            </p>
+            <div class="save-div">
+                <div>
+                    <p>
+                        Save:
+                    </p>
+                    <input type="text" name="" id="saving">
+                    <p> % </p>
+                </div>
+                <button id="save-btn">Save</button>
             </div>
             <h2>
-                Saving Amount: <span>0</span>
+                Saving Amount: <span id="saving-amount">0</span>
             </h2>
+            <p id="total-amount-hidden" class="hidden-3">
+                <span class="red">*</span> Balance Is Lower Than Saving.
+            </p>
             <h2>
-                Remaining Balance: <span>0</span>
+                Remaining Balance: <span id="remaining-balance">0</span>
             </h2>
         </div>
     </div>
+
+    <script src="app.js">
+
+    </script>
 </body>
 </html>

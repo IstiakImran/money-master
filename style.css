@@ -1,6 +1,9 @@
+
 h1{
     text-align: center;
-    color: goldenrod;
+    color: rgb(218, 137, 32);
+    font-weight: 600;
+    font-size: 55px;
 }
 h1 span{
     color: red;
@@ -22,6 +25,35 @@ h1 span{
     background-color: bisque;
     
 }
+.hidden-1{
+    font-size: 15px;
+    position: relative;
+    right: -44px;
+    bottom: -30px;
+    display: none;
+}
+.hidden{
+    font-size: 15px;
+    position: relative;
+    bottom: -30px;
+    display: none;
+}
+.hidden-2{
+    font-size: 15px;
+    position: relative;
+    bottom: -30px;
+    left: -65px;
+    display: none;
+}
+.hidden-3{
+    font-size: 15px;
+    position: relative;
+    bottom: -30px;
+    display: none;
+}
+.red{
+    color: red;
+}
 .expense-div{
     display: flex;
     flex-direction: column;
@@ -29,6 +61,14 @@ h1 span{
     align-items: flex-end;
 }
 .input-div{
+    display: flex;
+    align-items: center;
+}
+.save-div{
+    display: flex;
+    align-items: center;
+}
+.save-div div{
     display: flex;
     align-items: center;
 }
@@ -58,4 +98,42 @@ button{
 }
 button:hover{
     background-color: rgb(125, 171, 224);
+}
+
+@media screen and (max-width: 768px) {
+    .main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px, 10px;
+}
+.image {
+    width: 350px;
+    height: 475px;
+    margin: 10px 5px;
+    padding: 50px 5px;
+}
+.saving-container{
+    width: 350px;
+    height: 1000pxpx;
+    padding: 50px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    
+}
+.save-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hidden-2{
+    font-size: 15px;
+    position: relative;
+    bottom: -30px;
+    left: 5px;
+    display: none;
+}
 }
